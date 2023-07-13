@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
+import logo from './assets/logo.jpg'
+
 const TOOLBAR_OPTIONS = [
   [{ header: [1, 2, 3, 4, 5, 6, false] }],
   [{ font: [] }],
@@ -23,5 +25,13 @@ export default function TextEditor() {
     new Quill(editor, { theme: "snow", modules: { toolbar: TOOLBAR_OPTIONS } });
   }, []);
 
-  return <div className="container" ref={wrapperRef}></div>;
+  return <>
+  
+  <img src={logo} className="logo" alt="" />
+  <div className="container" ref={wrapperRef}>
+
+
+  </div>;
+
+  </>
 }

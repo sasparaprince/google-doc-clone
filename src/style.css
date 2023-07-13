@@ -22,14 +22,26 @@ body{
 .container .ql-toolbar.ql-snow{
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 2px;
+    position: fixed;
+    top: 0px;
     z-index: 1;
-    background-color: #f3f3f3;
+    margin-top: 0;
+    width: 100%;
+    background-color: white;
     border: none;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
 }
+.logo{
+    width: 100px;
+    height: 38px;
+    position: absolute;
+    position: fixed;
+    top: 2px;
+    z-index: 3;
+    margin-left: 20px;
+}
+
 @page{
     margin: 1in;
 }
@@ -46,6 +58,9 @@ body{
         align-self: flex-start;
     }
 .container .ql-toolbar.ql-snow{
+    display: none;
+}
+.logo{
     display: none;
 }
 
