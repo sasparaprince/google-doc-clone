@@ -1,4 +1,6 @@
 import React from 'react'
+import './style.css'
+
 import TextEditor from './TextEditor'
 const App = () => {
   return (
